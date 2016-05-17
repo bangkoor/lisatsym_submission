@@ -1,0 +1,21 @@
+<select name="warna" id="warna" onchange="javascript:ganti();">
+	<option name="hijau" value="hijau" selected>hijau</option>
+	<option name="biru" value="biru"/>biru</option>
+</select>
+<img src="hijau.png" id="gbr_hijau" style="display:block;width:300px;" />
+<img src="biru.png" id="gbr_biru" style="display:none;width:300px;" /> 
+<script type="text/javascript" language="javascript">
+	function ganti(){
+		var e = document.getElementById("warna");
+		var pilihan = e.options[e.selectedIndex].value;
+		var gbr_hijau = document.getElementById("gbr_hijau");
+		var gbr_biru = document.getElementById("gbr_biru")
+		if(pilihan === "hijau"){
+			gbr_hijau.style.display = "block";
+			gbr_biru.style.display = "none";
+		}else{
+			gbr_hijau.style.display = "none";
+			gbr_biru.style.display = "block";
+		}
+	}
+</script>
