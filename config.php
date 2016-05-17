@@ -2,7 +2,7 @@
 session_start();
  
 //koneksi ke database
-$link=mysqli_connect("localhost","root","","lisat_sym");
+$link=mysqli_connect("localhost","root","ganti","lisat_sym");
 
 //fungsi untuk mengkonversi size file
 function formatBytes($bytes, $precision = 2) { 
